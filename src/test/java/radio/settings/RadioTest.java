@@ -6,6 +6,16 @@ import org.junit.jupiter.api.Test;
 public class RadioTest {
 
     @Test
+    public void shouldSetSumStation(){
+        Radio radio = new Radio(24);
+
+        radio.setStation(17);
+
+        int expected = 17;
+        int actual = radio.getStation();
+    }
+
+    @Test
     public void shouldSetStation() {
         Radio radio = new Radio();
 
